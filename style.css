@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+
+
+.container {
+  padding: 10px 100px;
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0,0,0,0.3),transparent),url(assets/background.jpg);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+nav {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 5px 0;
+}
+
+.logo {
+  font-size: 4.3rem;
+  cursor: pointer;
+  background: -webkit-linear-gradient(60deg, rgb(235, 0, 0),rgb(174, 106, 252), rgb(99, 2, 129));
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+
+}
+
+.cart-icon {
+  width: 30px;
+  cursor: pointer;
+}
+
+.cart-icon:hover {
+  transform: scale(1.2);
+}
+
+nav ul {
+  flex: 1;
+  text-align: right;
+  padding-right: 30px;
+}
+
+nav ul li {
+  display: inline-block;
+  list-style: none;
+  margin: 10px 30px;
+}
+
+nav ul li a {
+  color: aliceblue;
+  text-decoration: none;
+  position: relative;
+}
+
+nav ul li a::after {
+  content: '';
+  width: 0;
+  height: 3px;
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: aliceblue;
+  transition: width 0.3s;
+}
+
+nav ul li a:hover::after {
+  width: 80%;
+}
+
+.text-box {
+  color: aliceblue;
+  position: absolute;
+  bottom: 8%;
+}
+
+.text-box p {
+  font-size: 50px;
+  font-weight: 600;
+  text-shadow: 3px 3px 3px black;
+
+}
+
+
+.text-box h1 {
+  font-size: 190px;
+  line-height: 160px;
+  margin-left: -10px;
+  color: transparent;
+  -webkit-text-stroke: 1px aliceblue;
+  background: url(assets/back.png);
+  -webkit-background-clip: text;
+  background-position: 0 0;
+  animation: back 20s linear infinite;
+}
+@keyframes back{
+  100%{
+  background-position: 2000px 0;
+
+  }
+}
+.text-box h3 {
+  font-size: 40px;
+  font-weight: 500;
+  text-shadow: 2px 2px 2px rgb(0, 0, 0);
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.but-1:hover {
+  background: -webkit-linear-gradient(60deg, rgb(235, 0, 0),rgb(174, 106, 252), rgb(99, 2, 129));
+}
+
+.but-2:hover {
+  background: -webkit-linear-gradient(60deg, rgb(235, 0, 0),rgb(174, 106, 252), rgb(99, 2, 129));
+}
+
+.btn-hover {
+  width: 200px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  cursor: pointer;
+  margin: 20px;
+  height: 55px;
+  text-align:center;
+  border: none;
+  background-size: 300% 100%;
+
+  border-radius: 50px;
+  moz-transition: all .4s ease-in-out;
+  -o-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+
+.btn-hover:hover {
+  background-position: 100% 0;
+  moz-transition: all .4s ease-in-out;
+  -o-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+
+.btn-hover.color-7 {
+  background-image: linear-gradient(to right, #6253e1, #852D91, #A3A1FF, #F24645);
+  box-shadow: 0 4px 15px 0 rgba(126, 52, 161, 0.75);
+}
+
+.btn-hover:focus {
+  outline: none;
+}
+
+.text-box a {
+  color: aliceblue;
+  text-decoration: none;
+  padding: 10px 20px;
+  margin-right: 20px;
+  border: 2px solid aliceblue;
+  display: flex;
+  align-items: center;
+}
+
+.text-box a span {
+  font-size: 30px;
+  line-height: 15px;
+  margin-left: 5px;
+}
+
+.social-icons {
+  position: absolute;
+  right: 5%;
+  bottom: 8%;
+}
+
+.social-icons img {
+  width: 25px;
+  display: block;
+  margin: 25px 5px;
+  filter: drop-shadow(3px 3px  rgb(0 0 0 / 0.4));
+}
+
+.social-icons img:hover {
+  transform: scale(1.2);
+}
