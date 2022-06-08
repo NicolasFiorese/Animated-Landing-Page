@@ -98,7 +98,7 @@ nav ul li a:hover::after {
   line-height: 160px;
   margin-left: -10px;
   color: transparent;
-  -webkit-text-stroke: 1px aliceblue;
+  -webkit-text-stroke: 3px aliceblue;
   background: url(assets/back.png);
   -webkit-background-clip: text;
   background-position: 0 0;
